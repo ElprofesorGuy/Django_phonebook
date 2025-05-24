@@ -1,0 +1,37 @@
+{% load static %}
+<!Doctype html>
+<html>
+    <head>
+        <title>Phone Book</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="{% static 'phonebook_django/css/style.css ' %}">
+    </head>
+    <body>
+        <header class="main-header">
+            <nav class="nav-bar">
+                <div class="phonebook">phonebook</div>
+                <button class="add"><a href="{% url 'phonebook_django:addContact' %}">+ Add Contacts</a></button>
+            </nav>
+        </header>
+        <h1 class="title">MY PHONE BOOK  </h1><br><br>
+         <table class="list-contact">
+            <tr class="head">
+                <th>Name</th>
+                <th>Contacts</th>
+                <th>Categorie</th>
+                <th>Ville</th>
+                <th colspan="2">Options</th>
+            </tr>
+            {% for contact in contacts %}
+                <tr>
+                    <td>{{ contact.name }}</td>
+                    <td>{{ contact.phoneNumber }}</td>
+                    <td>{{ contact.categorie }}</td>
+                    <td>{{ contact.city }}</td>
+                    <td><a href="#">modifier</a></td>
+                    <td><a href="#">supprimer</a></td>
+                </tr>
+            {% endfor %}
+         </table>
+    </body>
+</html>
