@@ -8,4 +8,4 @@ class newContactForm(forms.ModelForm):
     class Meta:
         model = Contact
         fields = ['name', 'phoneNumber', 'categorie', 'city']
-        labels = {'name': "nom", "phoneNumber":"Numéro de téléphone"}
+        labels = {'name': "Nom", "phoneNumber":"Numéro de téléphone"}

@@ -4,7 +4,7 @@
     <head>
         <title>Phone Book</title>
         <meta charset="utf-8"/>
-        <link rel="stylesheet" href="{% static 'phonebook_django/css/style.css ' %}">
+        <link rel="stylesheet" href="{% static 'phonebook_django/css/style.css' %}">
     </head>
     <body>
         <header class="main-header">
@@ -28,8 +28,8 @@
                     <td>{{ contact.phoneNumber }}</td>
                     <td>{{ contact.categorie }}</td>
                     <td>{{ contact.city }}</td>
-                    <td><a href="#">modifier</a></td>
-                    <td><a href="#">supprimer</a></td>
+                    <td id="edit"><a href="{% url 'phonebook_django:edit' contact.id %}">modifier</a></td>
+                    <td id="delete"><a href="{% url 'phonebook_django:remove' contact.id %}">supprimer</a></td>
                 </tr>
             {% endfor %}
          </table>
