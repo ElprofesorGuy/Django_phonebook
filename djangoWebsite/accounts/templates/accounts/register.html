@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register user</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Créer un compte</h1>
+        <form method="post">
+            {% csrf_token%}
+            {{ form.as_p }}
+            <input type="submit" value="Enregistrer">
+        </form>
+        
+    </body>
+</html>

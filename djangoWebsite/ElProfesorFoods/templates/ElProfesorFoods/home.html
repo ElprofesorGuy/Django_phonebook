@@ -1,0 +1,271 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hello World</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="{% static 'ElProfesorFoods/css/accueil.css' %}">
+        <link rel="stylesheet" href="{% static 'ElProfesorFoods/css/shared.css' %}">
+    </head>
+    <body>
+       <section class="main">
+            <header class="main_header">
+                <nav class="main_nav">
+                    <div class="logo">
+                        <p>
+                            <span>El Profesor</span> Foods
+                        </p>
+                    </div>
+                    <ul id="main_nav_elements">
+                        <li><a class="active_link" href="#">Accueil</a></li>
+                        <li><a href="{% url 'ElProfesorFoods:menu' %}">Menu</a></li>
+                        <li><a href="{% url 'ElProfesorFoods:reservation' %}">Réservation</a></li>
+                        <li><a href="{% url 'accounts:register_user' %}">Créer un compte</a></li>
+                        <li><a href="{%  url 'accounts:logout_user' %}">Déconnexion</a></li>
+                        <li><a href="{% url 'ElProfesorFoods:dashboard' %}">Dashboard</a></li>
+                    </ul>
+                    <button class="menu-button">
+                        
+                    </button>
+                </nav>
+            </header>
+            <section class="background-image">
+                <ul class="carrousel">
+                    <li class="slide">
+                        <img src="{% static 'Images/appetizing-healthy-rice-with-vegetables-white-plate-wooden-table.jpg' %}" alt="">
+                    </li>
+                    <li class="slide active">
+                        <img src="{% static 'Images/delicious-american-beer-assortment.jpg' %}" alt="">
+                    </li>
+                    <li class="slide">
+                        <img src="{% static 'Images/assortment-pieces-cake.png' %}" alt=""></li>
+                    <li class="slide">
+                        <img src="{% static 'Images/front-view-cooked-rice-with-fresh-sliced-vegetables-inside-white-plate-white-floor.jpg' %}" alt="">
+                    </li>
+                    <li class="slide">
+                        <img src="{% static 'Images/front-view-minced-vegetables-rice-colored-bright-surface.jpg' %}" alt="">
+                    </li>
+                    <li class="slide">
+                        <img src="{% static 'Images/delicious-fried-chicken-plate.jpg' %}" alt="">
+                    </li>
+                </ul>
+                <section class="slogan-section">
+                    <img src="" alt="">
+                    <p class="name">El Profesor Foods</p>
+                    <p class="slogan">Venez et découvrez l'art de la gastronomie Camerounaise.</p>
+                </section>
+                <section class="connect-section">
+                    <div class="div-livraison">
+                        <p>Faites le choix de vos plats et passer la commande!!!</p>
+                        <button class="command-button"><a href="{% url 'ElProfesorFoods:menu' %}">Commander ici</a></button>
+                    </div>
+                    <div class="account">
+                        <button class="create-account"><a href="{% url 'ElProfesorFoods:my_account' %}">Créer un compte</button></a>
+                    </div>
+                </section>
+            </section>
+       </section>
+       <section class="about-us">
+            <h1 class="about-us-title">About us</h1>
+            <div class="about-us-div">
+                <p class="paragraph">
+                    El Profesor Foods vous propose une cuisine camerounaise de qualité dans un cadre
+                    sobre et élégant situé en plein coeur de la capitale politique Yaoundé
+                    Le chef & son équipe vous proposent une cuisine authentique et issus de toutes les 
+                    régions du pays, allant du Nord au Sud et de l'Est à l'Ouest qui émerveilleront vos papilles.
+                    
+                </p>
+                <div class="image">
+                    <img src="{% static 'Images/french-restaurant-scene-with-menu-board.jpg' %}" alt="logo">
+                </div>
+            </div>
+        </section>
+        <section class="reservation">
+            <div class="image_inside">
+                <img src="{% static 'Images/restaurant-hall-with-leather-armchairs-french-windows.jpg' %}" alt="">
+            </div>
+            <div class="reservation-space">
+                <div class="main-title">
+                    <p class="key-word">Réservez</p>
+                    <p>Votre table</p>
+                </div>
+                <p class="paragraphe">Votre restaurant El Profesor Foods est heureux de vous accueillir
+                    du lundi au dimanche de <em>12:00 à 14:30</em> et de <em>19:00 à 22:30</em>
+                </p>
+            </div>
+        </section>
+        <section class="top-rated-dishes">
+            <div class="heading">
+                <span>Our menu</span>
+                <h1>Our top rated dished</h1>
+            </div>
+            <ul class="dishes">
+                <li class="dish">
+                    <img src="{% static 'Images/pommes_sautées-removebg-preview.png' %}" alt="">
+                    <div class="description">
+                        <h3>Pommes sautées</h3>
+                        <p>1500F CFA</p>
+                    </div>
+                </li>
+                <li class="dish">
+                    <img src="{% static 'Images/Okok-800x445-removebg-preview.png' %}" alt="">
+                    <div class="description">
+                        <h3>Okok</h3>
+                        <p>2000F CFA</p>
+                    </div>
+                </li>
+                <li class="dish">
+                    <img src="{% static 'Images/Milshake-removebg-preview.png' %}" alt="">
+                    <div class="description">
+                        <h3>Milkshake</h3>
+                        <p>1250F CFA</p>
+                    </div>
+                </li>
+                <li class="dish">
+                    <img src="{% static 'Images/assortment-pieces-cake-removebg-preview.png' %}" alt="">
+                    <div class="description">
+                        <h3>Gateaux à la crème</h3>
+                        <p>1000F CFA</p>
+                    </div>
+                </li>
+                <li class="dish">
+                    <img src="{% static 'Images/poulet_DG-removebg-preview.png' %}" alt="">
+                    <div class="description">
+                        <h3>Poulet DG</h3>
+                        <p>3000F CFA</p>
+                    </div>
+                </li>
+                <li class="dish">
+                    <img src="{% static 'Images/Tarte-removebg-preview.png' %}" alt="">
+                    <div class="description">
+                        <h3>Tarte</h3>
+                        <p>2000F CFA</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="feature-menu">
+            <div class="feature-container">
+                <div class="feature-menu-heading">
+                    <h1>Our featured food menu</h1>
+                </div>
+                <div class="feature">
+                    <div class="presentation" id="one">
+                        <div class="feature-description">
+                            <h2>Pizza</h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Sint exercitationem sit eos, aspernatur reiciendis libero molestias
+                                mollitia et cumque expedita maxime consequatur
+                            </p>
+                        </div>
+                        <div class="feature-image">
+                            <img src="{% static 'Images/pizza.jpg' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="presentation" id="two">
+                        <div class="feature-description">
+                            <h2>Shawarmar</h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Sint exercitationem sit eos, aspernatur reiciendis libero molestias
+                                mollitia et cumque expedita maxime consequatur
+                            </p>
+                        </div>
+                        <div class="feature-image">
+                            <img src="{% static 'Images/shawarmar.jpg' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="presentation" id="three">
+                        <div class="feature-description">
+                            <h2>Burger</h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Sint exercitationem sit eos, aspernatur reiciendis libero molestias
+                                mollitia et cumque expedita maxime consequatur
+                            </p>
+                        </div>
+                        <div class="feature-image">
+                            <img src="{% static 'Images/burger.jpg' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="presentation" id="four">
+                        <div class="feature-description">
+                            <h2>Poisson frit + pommes</h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Sint exercitationem sit eos, aspernatur reiciendis libero molestias
+                                mollitia et cumque expedita maxime consequatur
+                            </p>
+                        </div>
+                        <div class="feature-image">
+                            <img src="{% static 'Images/poisson.jpg' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="testimonials">
+            <h2 class="head_title">Testimonials</h2>
+            <div>
+                <button class="control" id="previous"><</button>
+                <ul class="slider">
+                    <li class="testimony visible">
+                        <h2 class="badge">Marie Kenfack</h2>
+                        <p> lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Voluptates, hic natus libero explicabo adipisci rem sunt ad 
+                        placeat officia vero, magnam, corrupti rerum tempora</p>
+                        <button class="bouton">>>></button>
+                    </li>
+                    <li class="testimony">
+                        <h2 class="badge">Sonia Bahoken</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Voluptates, hic natus libero explicabo adipisci rem sunt ad 
+                        placeat officia vero, magnam, corrupti rerum tempora</p>
+                        <button class="bouton">>>></button>
+                    </li>
+                    
+                    <li class="testimony">
+                        <h2 class="badge">Paul Siani</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Voluptates, hic natus libero explicabo adipisci rem sunt ad 
+                        placeat officia vero, magnam, corrupti rerum tempora</p>
+                        <button class="bouton">>>></button>
+                    </li>
+                </ul>
+                <button class="control" id="next">></button>
+            </div>
+        </section>
+        <footer>
+            <div class="footer">
+                <div class="containeur">
+                    <div class="row">
+                        <div class="footer-col">
+                             <h4>Company</h4>
+                             <ul>
+                                <li><a href="#">about us</a></li>
+                                <li><a href="#">our services</a></li>
+                                <li><a href="#">privacy policy</a></li>
+                             </ul>
+                        </div>
+                       <div class="footer-col">
+                             <h4>contact us</h4>
+                             <p>Email:guyeinstein15@gmail.com</p>
+                             <p>Téléphone : +237 670656617/ +237 620886579</p>
+                             <p>Adresse: PK17,Douala</p>
+                             <ul>
+                                <li><a href="#"></a></li>
+                             </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>follow us </h4>
+                            <div class="social_links">
+                               <div><a class="link" href="#"><img src="{% static 'Images/facebook.png' %}" alt="no image"></a></div>
+                               <div><a class="link" href="#"><img src="{% static 'Images/linkedin.png' %}" alt=""></a></div>
+                               <div><a class="link" href="#"><img src="{% static 'Images/whatsapp.png' %}" alt=""></a></div>
+                            </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-bar">&copy 2024  El Profesor Repetition All rights reserved</div>
+        </footer>
+       <script src="{% static 'JAVASCRIPT/accueil.js' %}"></script>
+    </body>
+</html>

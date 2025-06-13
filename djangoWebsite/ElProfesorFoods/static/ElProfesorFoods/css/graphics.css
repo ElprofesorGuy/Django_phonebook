@@ -1,0 +1,19 @@
+.graph-box{
+    position:relative;
+    width:80%;
+    margin: auto;
+    display: flex;
+    align-items:center;
+}
+.graph-box .box{
+    position:relative;
+    background:#fff;
+    padding:20px;
+    width:100%;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    border-radius:20px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    margin:20px 0;
+}

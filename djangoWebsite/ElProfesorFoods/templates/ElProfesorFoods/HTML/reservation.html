@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Reservation</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../CSS/account.css">
+        <link rel="stylesheet" href="../CSS/shared.css">
+    </head>
+    <body>
+        <header class="main_header">
+            <nav class="main_nav">
+                <div class="logo">
+                    <p>
+                        El Profesor Foods
+                    </p>
+                </div>
+                <ul id="main_nav_elements">
+                    <li><a href="../accueil.html">Accueil</a></li>
+                    <li><a href="menu2.html">Menu</a></li>
+                    <li><a class="active_link" href="#">Réservation</a></li>
+                    <li><a href="account.html">Créer un compte</a></li>
+                    <li><a href="signin.html">Votre compte</a></li>
+                    <li><a href="signin.html">Dashboard</a></li>
+                </ul>
+                <button class="menu-button">   
+                </button>
+            </nav>
+        </header>
+        <section class="body-contact">
+            <section class="containeur">
+                <div class="title">Reservation</div>
+                <form action="#">
+                       <div class="user-details">
+                            <div class="input-box">
+                                <span class="details">Full Name <em>*</em></span>
+                                <input type="text" placeholder="Enter your name"  required>
+                            </div>
+                            <div class="input-box">
+                                <span class="details">UserName <em>*</em></span>
+                                <input type="text" placeholder="Enter your username"  required>
+                            </div>
+                             <div class="input-box">
+                                <span class="details">Date<em>*</em></span>
+                                <input type="date" required>
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Heure<em>*</em></span>
+                                <input type="datetime" placeholder="Enter the hour of your reservation"  required>
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Nombres de personnes<em>*</em></span>
+                                <input type="number" placeholder="Enter the number of persons"  required>
+                            </div>
+                            <div class="input-box">
+                                <span class="details"> Option de résevation<em>*</em></span>
+                                <select name="reservation-option" id="reservation-option" placeholder="Choisissez l'option de réservation">
+                                    <option value="mariage">Mariage</option>
+                                    <option value="anniversaire">Anniversaire</option>
+                                    <option value="sacrements">Sacrements</option>
+                                    <option value="térasse">Réservation en térasse</option>
+                                </select>
+                            </div>
+                       </div>
+                       <div class="button">
+                        <input type="submit" value="send">
+                       </div>
+                </form>
+            </section>
+        </section>
+        <footer>
+            <div class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-col">
+                             <h4>Company</h4>
+                             <ul>
+                                <li><a href="#">about us</a></li>
+                                <li><a href="#">our services</a></li>
+                                <li><a href="#">privacy policy</a></li>
+                             </ul>
+                        </div>
+                       <div class="footer-col">
+                             <h4>contact us</h4>
+                             <p>Email:guyeinstein15@gmail.com</p>
+                             <p>Téléphone : +237 670656617/ +237 620886579</p>
+                             <p>Adresse: PK17,Douala</p>
+                             <ul>
+                                <li><a href="#"></a></li>
+                             </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>follow us </h4>
+                            <div class="social_links">
+                               <div><a class="link" href="#"><img src="../Images/facebook.png" alt=""></a></div>
+                               <div><a class="link" href="#"><img src="../Images/linkedin.png" alt=""></a></div>
+                               <div><a class="link" href="#"><img src="../Images/whatsapp.png" alt=""></a></div>
+                            </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-bar">&copy 2024  El Profesor Repetition All rights reserved</div>
+        </footer>
+        <script src="../JAVASCRIPT/reservation.js"></script>
+    </body>
+</html>

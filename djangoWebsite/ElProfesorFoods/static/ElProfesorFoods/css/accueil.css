@@ -1,0 +1,459 @@
+#main_nav_elements li a.active_link{
+    color:red;
+    font-weight:bolder;
+}
+#main_nav_elements li a.active_link::after,
+#main_nav_elements li a.active_link:hover::after{
+    content:"";
+    height:2px;
+    width:50%;
+    position:absolute;
+    bottom:5px;
+    left:10px;
+    background: red;
+
+}
+
+.background-image{
+    height:100vh;
+    width:100%;
+    position:relative;
+}
+.carrousel li{
+    list-style:none;
+}
+.slide{
+    width:100%;
+    height:100%;
+    opacity:0;
+}
+.slide img{
+    height:100vh;
+    width:100%;
+    object-fit: cover;
+    position:absolute;
+}
+.active{
+    filter:brightness(70%);
+    opacity: 1;
+}
+.name{
+    font-family: "EB Garamond", serif;
+    color:white;
+    font-size:100px;
+    margin-left:20px;
+    display:inline;
+    border-bottom:solid 2px white;
+}
+.slogan{
+    color:skyblue;
+    font-size:32px;
+    text-align:left;
+    padding:20px;
+    width:50%;
+}
+.connect-section{
+    text-align:center;
+    margin:auto;
+    position:relative;
+    z-index:5;
+}
+.div-livraison,
+.account{
+    padding:10px;
+    margin:40px;
+    font-size:40px;
+}
+.div-livraison p{
+    color:white;
+}
+.command-button{
+    padding:10px;
+    border:solid 2px white;
+    border-radius:5px;
+    background-color: transparent;
+    color:white;
+    transition:all 0.8s ease;
+    width:150px;
+}
+.command-button:hover{
+    background-color: white;
+    border:solid 2px transparent;
+    color:blue;
+}
+.command-button a{
+    text-decoration:none;
+    color:white;
+    font-weight:bolder;
+    font-size:16px;
+    transition:0.6s;
+}
+.command-button a:hover{
+    color:blue;
+}
+.create-account{
+    margin:10px 10px;
+    width:150px;
+    background:skyblue;
+    padding:10px;
+    border:none;
+    border-radius:5px;
+    border:solid 2px white;
+    transition:0.8s;
+}
+.create-account:hover{
+    border-color:skyblue;
+    background-color: white;
+}
+.create-account a{
+    text-decoration:none;
+    color:black;
+    font-weight:bolder;
+    transition:0.8s;
+}
+.create-account a:hover{
+    color:skyblue;
+}
+.about-us{
+    padding:20px;
+    position:relative;
+    z-index:-1;
+    background-color: #f9f9f9;
+}
+.about-us-title{
+    text-align:center;
+    margin:30px 0 0 0;
+    font-family: "Merienda", cursive;
+    color:red;
+    font-size:50px;
+}
+.about-us-div{
+    display:grid;
+    align-items:center;
+    justify-content: space-between;
+    grid-template-columns: 45% 45%;
+    height:400px;
+    overflow: hidden;
+}
+.paragraph{
+    font-size:20px;
+    padding:12px;
+    text-align:justify;
+}
+.image{
+    width:100%;
+    height:70%;
+    transition:0.8s;
+    overflow: hidden;
+}
+.image img{
+    width:100%;
+    height:100%;
+    transition:0.5s;
+}
+.image img:hover{
+    transform:scale(1.2);
+}
+.reservation{
+    /*background-color: skyblue;*/
+    height:400px;
+    display:flex;
+    justify-content: center;
+    background-color: #f9f9f9;
+}
+.image_inside{
+    margin:auto;
+    width:40%;
+    height:80%;
+    overflow:hidden;
+    transition:0.8s;
+}
+.image_inside img{
+    width:100%;
+    height:100%;
+    transition:0.5s;
+    object-fit: cover;
+}
+.image_inside img:hover{
+    transform: scale(1.2);
+}
+.reservation-space{
+    width:50%;
+    margin:auto;
+}
+.main-title{
+    text-align:center;
+}
+.key-word{
+    color:red;
+    font-size:30px;
+    font-family: "Merienda", cursive;
+}
+.key-word+p{
+    color:black;
+    font-size:30px;
+    font-weight:bold;
+}
+.paragraphe{
+    width:70%;
+    margin:auto;
+    text-align:center;
+}
+.paragraphe em{
+    font-weight: bold;
+}
+.top-rated-dishes{
+    margin:auto;
+    padding:10px;
+    width: 80%;
+}
+.heading{
+    text-align:center;
+    padding-bottom:2rem;
+}
+.heading h1{
+    font-size:32px;
+}
+.dishes{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.5rem;
+    list-style:none;
+    text-transform: capitalize;
+}
+.dish{
+    border-radius:5px;
+    background: #ece3e3;
+    padding: 5px;
+    display:flex;
+    align-items:center;
+    gap:1.5rem;
+}
+.dish:hover{
+    background-color: rgb(55, 32, 187);
+}
+.dish:hover .description h3{
+    color:white;
+    font-weight:bold;
+}
+.dish img{
+    width: 100px;
+    height:100px;
+    border-radius: 50%;
+    border:solid 2px transparent;
+}
+.description h3{
+    font-size: 1.2rem;
+    color: #130f40;
+    padding-bottom: .5rem;
+}
+.description p{
+    font-size: 1rem;
+    color: orangered;
+    font-weight: bolder;
+}
+.feature-menu{
+    padding:70px 0;
+}
+.feature-menu-heading h1{
+    font-size:32px;
+    text-align:center;
+    margin-bottom:30px;
+}
+.feature{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    overflow: hidden;
+}
+.presentation{
+    display: grid;
+    /*grid-template-columns: 2fr 2fr;*/
+    gap:50px;
+    /*border:solid 2px blue;*/
+    padding: 12px;
+    margin:10px;
+    border-radius:5px;
+    box-shadow: 3px 3px 4px  rgba(0, 0, 0, 0.4);
+}
+#one{
+    background: #ece3e3;
+    color:black;
+}
+#two{
+    background: #222;
+    color:white;
+}
+#three{
+    background:#ece3e3;
+    color:black;
+}
+#four{
+    background:#222;
+    color:white;
+}
+#one:hover, #three:hover{
+    background: orange;
+}
+#two:hover, #four:hover{
+    background: blue;
+}
+.feature-description{
+    width:100%;
+    text-align:left;
+    display: flex;
+    flex-direction:column;
+}
+.feature-description h2{
+    font-weight:bold;
+    text-align:center;
+    margin:30px 0;
+}
+
+.feature-image{
+    width:200px;
+    height:200px;
+    border-radius: 50%;
+    background: #fff;
+    margin:auto;
+}
+.feature-image img{
+    width:100%;
+    height:100%;
+    border-radius:50%;
+}
+.testimonials{
+    margin-top:20px;
+    background: #f9f9f9;
+    padding:20px;
+}
+.testimonials .head_title{
+    color:#5372F0;
+    text-align:center;
+    margin:5px 0;
+    font-size:40px;
+}
+/*.testimonials .head_title::after{
+    content:"";
+    background-color: #5372F0;
+    height:2px;
+    width:100px;
+    position:absolute;
+    bottom:-10px;
+    left:45%;
+
+}*/
+.testimonials div{
+    display:flex;
+    align-items:center;
+}
+.testimonials .control{
+    width:50px;
+    height:50px;
+    padding:10px;
+    border-radius:50px;
+    border:solid 2px transparent;
+    font-size:30px;
+    font-weight:bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#fff;
+}
+.testimonials .control:hover{
+    border-color:#5372F0;
+    color:#5372F0;
+}
+.slider{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.slider .testimony{
+    list-style: none;
+    margin:0 10px;
+    padding:18px;
+    border-radius:12px;
+    background-color: #fff;
+    border:solid 2px transparent;
+    box-shadow:0 10px 10px rgba(0, 0, 0, 0.05);
+}
+.slider .testimony.visible{
+    display:block;
+    margin:10px 0;
+}
+.slider .testimony:hover{
+    border-color: #5372F0;
+}
+.badge{
+    text-align:center;
+    font-weight:bolder;
+}
+.slider .testimony .bouton{
+    height:35px;
+    width:35px;
+    border-radius:50px;
+    color:#5372F0;
+    border:solid 2px #5372F0;
+    transform:rotate(-45deg);
+    background: transparent;
+    cursor:pointer;
+    margin:30px 0 5px;
+    transition:0.3s ease;
+}
+.slider .testimony:hover .bouton{
+    color:#fff;
+    background: #5372F0;
+}
+
+@media (max-width:764px){
+    .connect-section{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .name{
+        font-size:50px;
+        margin-left:0;
+    }
+    .slogan{
+        font-size:25px;
+        width:75%;
+    }
+    .connect-section{
+        margin:20px;
+        text-align:center;
+    }
+    .div-livraison{
+        width:100%;
+        margin:0 10px;
+    }
+}
+.title_testimonials{
+    text-align:center;
+}
+@media (max-width:670px){
+    .reservation{
+        height:300px;
+    }
+    .reservation-space{
+        height:60%;
+        margin:10px;
+        padding:5px;
+    }
+    .image_inside img,
+    .image img{
+        width:85%;
+        height:60%;
+    }
+    .paragraph{
+        font-size:15px;
+        width:70%;
+    }
+    .about-us div{
+        display:flex;
+        justify-content: center;
+        align-items:center;
+    }
+}

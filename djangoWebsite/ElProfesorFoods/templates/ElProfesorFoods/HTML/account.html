@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Create Account</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../CSS/account.css">
+        <link rel="stylesheet" href="../CSS/shared.css">
+    </head>
+    <body>
+        <header class="main_header">
+            <nav class="main_nav">
+                <div class="logo">
+                    <p>
+                        El Profesor Foods
+                    </p>
+                </div>
+                <ul id="main_nav_elements">
+                    <li><a href="../accueil.html">Accueil</a></li>
+                    <li><a href="menu2.html">Menu</a></li>
+                    <li><a href="reservation.html">Réservation</a></li>
+                    <li><a a class="active_link" href="#">Créer un compte</a></li>
+                    <li><a href="signin.html">Votre compte</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                </ul>
+                <button class="menu-button">   
+                </button>
+            </nav>
+        </header>
+        <section class="body-contact">
+            <section class="containeur">
+                <div class="title">Registration</div>
+                <form action="#">
+                       <div class="user-details">
+                            <div class="input-box">
+                                <span class="details">Full Name <em>*</em></span>
+                                <input type="text" placeholder="Enter your name"  required>
+                            </div>
+                            <div class="input-box">
+                                <span class="details">UserName <em>*</em></span>
+                                <input type="text" placeholder="Enter your username"  required>
+                            </div>
+                             <div class="input-box">
+                                <span class="details">Email <em>*</em></span>
+                                <input type="email" placeholder="Enter your email"  required>
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Phone Number <em>*</em></span>
+                                <input type="text" placeholder="Enter your phone number"  required>
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Password <em>*</em></span>
+                                <input type="password" placeholder="Enter your password"  required>
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Confirm password <em>*</em></span>
+                                <input type="password" placeholder="Confirm your password"  required>
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Gender <em>*</em></span>
+                                <input type="text" placeholder="Male or female"  required>
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Address<em>*</em></span>
+                                <input type="text" placeholder="Enter your address"  required>
+                            </div>
+                       </div>
+                       <div class="button">
+                        <input type="submit" value="send">
+                       </div>
+                       <div class="exist-account">
+                        <p>You already have an account?<a href="signin.html"class="sign-in"> Sign in</a></p>
+                       </div>
+                </form>
+            </section>
+        </section>
+        <footer>
+            <div class="footer">
+                <p>El Restaurante</p>
+                <a href="#" class="contact_link"> CONTACT US</a>
+            </div>
+            <p class="copyright">&copy 2024 copyright El Profesor</p>
+        </footer>
+        <script src="../JAVASCRIPT/account.js"></script>
+    </body>
+</html>

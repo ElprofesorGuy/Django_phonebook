@@ -1,0 +1,118 @@
+#main_nav_elements li a.active_link{
+    color:red;
+    font-weight:bolder;
+}
+#main_nav_elements li a.active_link::after,
+#main_nav_elements li a.active_link:hover::after{
+    content:"";
+    height:2px;
+    width:50%;
+    position:absolute;
+    bottom:5px;
+    left:10px;
+    background: red;
+}
+i:hover{
+    color:orangered;
+}
+h1{
+    text-align:center;
+    color:orangered;
+    font-size:50px;
+    font-weight:bolder;
+    margin-top:100px;
+    margin-bottom:50px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.slogan-section{
+    display:flex;
+    align-items: center;
+}
+.name{
+    font-family: "EB Garamond", serif;
+    color:white;
+    font-size:100px;
+    margin-left:20px;
+    display:inline;
+    color:rgb(13, 16, 17);
+    border-bottom:solid 2px white;
+}
+.slogan-section img{
+    border-radius: 50%;
+    padding:30px 20px;
+    margin:30px;
+    height: 200px;
+    width:200px;
+    object-fit: cover;
+}
+.menu-entrees,
+.menu-plats{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top:20px;
+    margin-bottom:150px;
+}
+.menu{
+    position:relative;
+    margin:10px;
+    width: 300px;
+    height: 360px;
+    border:solid 2px transparent;
+    border-radius:5px;
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.8);
+    transition:0.8s;
+    overflow: hidden;
+}
+.carte{
+    position:relative;
+    z-index:1;
+    text-align:center;
+    background: beige;
+}
+
+.image{
+    width:100%;
+}
+.image img{
+    width:100%;
+    height: 250px;
+    object-fit: cover;
+}
+.details{
+    margin:5px 0;
+}
+.details p{
+    text-align:left;
+    padding-left:10px;
+}
+.price{
+    padding:5px 0;
+}
+.price span{
+    color:blue;
+    font-weight:bolder;
+}
+.message{
+    position:absolute;
+    top:0;
+    left:100%;
+    width:100%;
+    height:100%;
+    background: #222;
+    color:#fff;
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    font-size:l9px;
+    transform:translateX(0);
+    transition: 1.2s;
+    z-index:3;
+    opacity: 0.8;
+
+}
+.menu:hover .message{
+    transform:translateX(-100%);
+    cursor:pointer;
+}

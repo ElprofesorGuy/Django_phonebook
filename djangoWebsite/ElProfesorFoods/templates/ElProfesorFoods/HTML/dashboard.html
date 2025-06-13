@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DASHBOARD</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../CSS/dashboard.css">
+        <link rel="stylesheet" href="../fontawesome-free-6.7.2-web/css/all.css">
+    </head>
+    <body>
+        <section class="sidebar">
+            <div class="logo">
+                <img src="" alt="no logo">
+                <p>El Profesor</p>
+            </div>
+            <ul class="sidebar_links">
+                <li class="active">
+                    <i class="fas fa-home home-icon"></i>
+                    <a id="active_link" href="#">Home</a>
+                </li>
+                <li>
+                    <i class="fas fa-chart-line graph-icon"></i>
+                    <a href="graphDb.html">Graphics</a>
+                </li>
+                <li>
+                    <i class="fas fa-calendar calendar-icon"></i>
+                    <a href="#">Calendar</a>
+                </li>
+                <li>
+                    <a href="#">Apps</a>
+                </li>
+                <li>
+                    <i class="fas fa-money-bill money-icon"></i>
+                    <a href="#">Payments</a>
+                </li>
+                <li>
+                    <i class="fas fa-cog settings-icon"></i>
+                    <a href="#">Settings</a>
+                </li>
+                <li>
+                    <a href="#">Log out</a>
+                </li>
+            </ul>
+        </section>
+        <section class="container">
+            <section class="nav_bar">
+                <div class="search_bar">
+                    <input type="text" placeholder="what do you want to day?">
+                    <button type="submit"><i class="fas fa-search search-icon"></i></button>
+                </div>
+                <div class="user-icons">
+                    <div class="icons">
+                        <i class="fas fa-message search-icon"></i>
+                        <i class="fas fa-bell notification-icon"></i>
+                        <i class="fas fa-thumbs-up like"></i>
+                    </div>
+                    <div class="profil">
+                        <i class="fas fa-user user-icon"></i>
+                        <p class="username">Username</p>
+                    </div>
+                </div>
+            </section>
+            <div class="content">
+                <div class="head">
+                    <div class="title">
+                        <h2>Restaurant Dashboard</h2>
+                        <p>Home / <span>Dashboard</span></p>
+                    </div>
+                    <div class="boutons">
+                        <button class="manage">Manage dashboard</button>
+                        <button class="new">+ Create New reservation</button>
+                    </div>
+                </div>
+            </div>
+            <div class="informations">
+                <div class="restaurant_datas">
+                    <div class="info">
+                        <div class="card" id="card1">
+                            <p>Total income</p>
+                            <h2>$34,000,00</h2>
+                        </div>
+                        <div class="card" id="card2">
+                            <p>Servers</p>
+                            <h2>250</h2>
+                        </div>
+                        <div class="card" id="card3">
+                            <p>Students</p>
+                            <h2>100</h2>
+                        </div>
+                    </div>
+                    <div class="favourite">
+                        <div class="entete">
+                            <div class="fav_head">
+                                <h5>Most favourites menus</h5>
+                                <p>Lorem ipsum dolor sit</p>
+                            </div>
+                            <ul id="list">
+                                <li><a class="link_active" href="">All categories</a></li>
+                                <li><a href="">Entrees</a></li>
+                                <li><a href="">Plats</a></li>
+                                <li><a href="">Desserts</a></li>
+                            </ul>
+                        </div>
+                        <div class="plats">
+                            <div>
+                                <img src="../Images/kati_kati.jpg" alt="">
+                                <div class="details">
+                                    <p class="name_plat">Kati Kati</p>
+                                    <p class="sales">Total Sales : $3500</p>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="../Images/assortment-pieces-cake.png" alt="">
+                                <div class="details">
+                                    <p class="name_plat">Kati Kati</p>
+                                    <p class="sales">Total Sales : $3500</p>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="../Images/poulet_DG.jpg" alt="">
+                                <div class="details">
+                                    <p class="name_plat">Kati Kati</p>
+                                    <p class="sales">Total Sales : $3500</p>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="../Images/delicious-fried-chicken-plate.jpg" alt="">
+                                <div class="details">
+                                    <p class="name_plat">Kati Kati</p>
+                                    <p class="sales">Total Sales : $3500</p>
+                                </div>
+                            </div>                    
+                        </div>
+                    </div>
+                </div>
+                <div class="most-sales">
+                    <div class="sales-header">
+                        <h6>Most selling items</h6>
+                        <p>Lorem ipsum dolor sit amet</p>
+                    </div>
+                    <ul id="links-period">
+                        <li><a href="" class="active_period">Monthly</a></li>
+                        <li><a href="">Weekly</a></li>
+                        <li><a href="">Today</a></li>
+                    </ul>
+                    <div class="articles">
+                        <div class="article">
+                            <div class="art-details">
+                                <img src="../Images/poulet_DG.jpg" alt="">
+                                <div class="name">
+                                    <h5>Poulet DG</h5>
+                                    <p>500 commands</p>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <p>$12000</p>
+                            </div>
+                        </div>
+                        <div class="article">
+                            <div class="art-details">
+                                <img src="../Images/kati_kati.jpg" alt="">
+                                <div class="name">
+                                    <h5>kati kati</h5>
+                                    <p>430 commands</p>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <p>$11500</p>
+                            </div>
+                        </div>
+                        <div class="article">
+                            <div class="art-details">
+                                <img src="../Images/kontchap.jpg" alt="">
+                                <div class="name">
+                                    <h5>Poulet DG</h5>
+                                    <p>418 commands</p>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <p>$10750</p>
+                            </div>
+                        </div>
+                        <div class="article">
+                            <div class="art-details">
+                                <img src="../Images/Les plats Camerounais les plus populaires.jpg" alt="">
+                                <div class="name">
+                                    <h5>koki</h5>
+                                    <p>410 commands</p>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <p>$9800</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="../JAVASCRIPT/dashboard.js"></script>
+    </body>
+</html>

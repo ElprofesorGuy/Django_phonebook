@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Graph dashboard</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../CSS/graphDb.css">
+        <link rel="stylesheet" href="../fontawesome-free-6.7.2-web/css/all.css">
+    </head>
+    <body>
+        <section class="sidebar">
+            <div class="logo">
+                <img src="" alt="no logo">
+                <p>El Profesor</p>
+            </div>
+            <ul class="sidebar_links">
+                <li>
+                    <i class="fas fa-home home-icon"></i>
+                    <a href="dashboard.html">Home</a>
+                </li>
+                <li class="active">
+                    <i class="fas fa-chart-line graph-icon"></i>
+                    <a id="active_link" href="#">Graphics</a>
+                </li>
+                <li>
+                    <i class="fas fa-calendar calendar-icon"></i>
+                    <a href="#">Calendar</a>
+                </li>
+                <li>
+                    <a href="#">Apps</a>
+                </li>
+                <li>
+                    <i class="fas fa-money-bill money-icon"></i>
+                    <a href="#">Payments</a>
+                </li>
+                <li>
+                    <i class="fas fa-cog settings-icon"></i>
+                    <a href="#">Settings</a>
+                </li>
+                <li>
+                    <a href="#">Log out</a>
+                </li>
+            </ul>
+        </section>
+        <div class="container">
+            <section class="nav_bar">
+                <div class="search_bar">
+                    <button type="submit"><img src="../Images/search-line.png" alt="serach icon"></button>
+                    <input type="text" placeholder="what do you want to day?">
+                </div>
+                <div class="user-icons">
+                    <div class="icons">
+                        <i class="fas fa-message search-icon"></i>
+                        <i class="fas fa-bell notification-icon"></i>
+                        <i class="fas fa-thumbs-up like"></i>
+                    </div>
+                </div>
+                <div class="profil">
+                    <i class="fas fa-user user-icon"></i>
+                    <p class="username">Username</p>
+                </div>
+            </section>
+            <div class="content">
+                <div class="head">
+                    <div class="title">
+                        <h2>Restaurant Dashboard</h2>
+                        <p>Home / <span>Graphics</span></p>
+                    </div>
+                    <div class="boutons">
+                        <button class="manage">Manage dashboard</button>
+                        <button class="new">+ Create New reservation</button>
+                    </div>
+                </div>
+            </div>
+            <div class="graph-box">
+                <div class="box">
+                    <canvas id="monthly-sales"></canvas>
+                </div>
+            </div>
+        </div>
+        <script src="{% static 'JAVASCRIPT/chart.js' %}"></script>
+        <script src="{% static 'JAVASCRIPT/my_chart.js' %}"></script>
+    </body>
+</html>

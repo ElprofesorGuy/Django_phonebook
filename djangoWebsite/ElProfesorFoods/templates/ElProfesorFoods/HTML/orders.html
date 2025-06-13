@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dashboard</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../CSS/orders.css">
+        <link rel="stylesheet" href="../CSS/sharedDb.css">
+        <link rel="stylesheet" href="../fontawesome-free-6.7.2-web/css/all.css">
+    </head>
+    <body>
+        <div class="sidebar">
+            <div class="navigation">
+                <ul>
+                    <li>
+                        <a href="">
+                        <span class="sidebar-icon"><i></i></span>
+                        <span class="title">El Profesor Foods</span></a>
+                    </li>
+                    <li>
+                        <a href="Dash.html">
+                        <span class="sidebar-icon"><i class="fas fa-home"></i></span>
+                        <span class="title">Dashboard</span></a>
+                    </li>
+                    <li>
+                        <a href="graphics.html">
+                        <span  class="sidebar-icon"><i class="fas fa-chart-line"></i></span>
+                        <span class="title">Graphics</span></a>
+                    </li>
+                    <li class="on">
+                        <a href="#">
+                        <span class="sidebar-icon"><i class="fas fa-clipboard-list"></i></span>
+                        <span class="title">Orders</span></a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        <span class="sidebar-icon"><i class="fas fa-users"></i></span>
+                        <span class="title">Customers</span></a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        <span class="sidebar-icon"><i class="fas fa-info-circle"></i></span>
+                        <span class="title">Help</span></a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        <span class="sidebar-icon"><i class="fas fa-cog"></i></span>
+                        <span class="title">Settings</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="search here">
+                        <i class="fas fa-search"></i>
+                    </label>
+                </div>
+                <div class="user">
+                    <img src="" alt="">
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div>
+                        <div class="numbers">1.504</div>
+                        <div class="cardName">Daily Views</div>
+                    </div>
+                    <div class="iconCard">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numbers">80</div>
+                        <div class="cardName">Sales</div>
+                    </div>
+                    <div class="iconCard">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numbers">284 comments</div>
+                        <div class="cardName">Views</div>
+                    </div>
+                    <div class="iconCard">
+                        <i class="fas fa-comment"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numbers">$ 7.804</div>
+                        <div class="cardName">Earning</div>
+                    </div>
+                    <div class="iconCard">
+                        <i class="fas fa-money-bill"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="details">
+                <div class="recentOrders">
+                    <div class="cardHeader">
+                        <h2>recent Orders</h2>
+                        <a href="#" class="btn">View All</a>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Name</td>
+                                <td>Price</td>
+                                <td>Payments</td>
+                                <td>Status</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Vin blanc</td>
+                                <td>$1200</td>
+                                <td>Paid</td>
+                                <td><span class="status delivered">In Progress</span></td>
+                            </tr>
+                            <tr>
+                                <td>Poulet DG</td>
+                                <td>$110</td>
+                                <td>Due</td>
+                                <td><span class="status return">Return</span></td>
+                            </tr>
+                            <tr>
+                                <td>macedoine</td>
+                                <td>$775</td>
+                                <td>Paid</td>
+                                <td><span class="status pending">Pending</span></td>
+                            </tr>
+                            <tr>
+                                <td>ice cream</td>
+                                <td>$110</td>
+                                <td>Due</td>
+                                <td><span class="status pending">Pending</span></td>
+                            </tr>
+                            <tr>
+                                <td>Okok</td>
+                                <td>$110</td>
+                                <td>Due</td>
+                                <td><span class="status inprogress">In progress</span></td>
+                            </tr>
+                            <tr>
+                                <td>koki plantain</td>
+                                <td>$120</td>
+                                <td>Due</td>
+                                <td><span class="status pending">Pending</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <script src="../JAVASCRIPT/dashessai.js"></script>
+    </body>
+</html>

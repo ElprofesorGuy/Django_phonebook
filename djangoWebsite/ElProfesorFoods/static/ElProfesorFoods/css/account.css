@@ -1,0 +1,116 @@
+#main_nav_elements li a.active_link{
+    color:red;
+    font-weight:bolder;
+}
+#main_nav_elements li a.active_link::after,
+#main_nav_elements li a.active_link:hover::after{
+    content:"";
+    height:2px;
+    width:50%;
+    position:absolute;
+    bottom:5px;
+    left:10px;
+    background: red;
+
+}
+.body-contact{
+    display:flex;
+    height:100vh;
+    justify-content: center;
+    align-items:center;
+    background-image: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+.containeur{
+    max-width:700px;
+    width:100%;
+    background: #fff;
+    padding:25px 30px;
+    border-radius:5px;
+}
+
+.containeur .title{
+    font-size:25px;
+    font-weight:bolder;
+}
+.containeur form .user-details{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+form .user-details .input-box{
+    margin: 20px 0 12px 0;
+    width:calc(100%/2 - 20px);
+}
+.user-details .input-box .details{
+    display:block;
+    font-weight:500;
+    margin-bottom:3px;
+}
+form .user-details .input-box input, form .user-details .input-box select{
+    outline:none;
+    border-radius:5px;
+    border:solid 1px #ccc;
+    padding-left:12px;
+    height:45px;
+    width:100%;
+    border-bottom-width: 2px;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid,
+.user-details .input-box select:focus,
+.user-details .input-box select:valid
+{
+    border-color: #9b59b6;
+    transition: all 0.6s ease;
+}
+form .button{
+    height:45px;
+    margin:45px 0;
+}
+form .button input{
+    height:100%;
+    width:100%;
+    outline:none;
+    border:none;
+    font-size:18px;
+    font-weight:500;
+    letter-spacing: 1px;
+    border-radius:5px;
+    background-image: linear-gradient(135deg,#71b7e6, #9b59b6 );
+    transition:all 1.6 ease;
+}
+form .button input:hover{
+    background-image: linear-gradient(135deg, #9b59b6, #71b7e6);
+}
+.details{
+    color:black;
+    font-weight:bolder;
+}
+em{
+    color:red;
+}
+.exist-account p{
+    font-weight: bolder;
+}
+.sign-in{
+    color:red;
+    text-decoration:none;
+    transition: all 0.6S ease;
+}
+.sign-in:hover{
+    padding-left:10px;
+    text-decoration:underline;
+}
+@media (max-width: 720px) {
+    .container{
+        max-width: 100%;
+    }
+    form .user-details .input-box{
+        margin-bottom:15px;
+        width:100%;
+    }
+    .container form .user-details{
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+}

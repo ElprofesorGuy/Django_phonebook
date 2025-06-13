@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Graphics</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="../fontawesome-free-6.7.2-web/css/all.css">
+        <link rel="stylesheet" href="../CSS/sharedDb.css">
+        <link rel="stylesheet" href="../CSS/graphics.css">
+    </head>
+    <body>
+        <div class="sidebar">
+            <div class="navigation">
+                <ul>
+                    <li>
+                        <a href="">
+                        <span class="sidebar-icon"><i></i></span>
+                        <span class="title">El Profesor Foods</span></a>
+                    </li>
+                    <li>
+                        <a href="Dash.html">
+                        <span class="sidebar-icon"><i class="fas fa-home"></i></span>
+                        <span class="title">Dashboard</span></a>
+                    </li>
+                    <li  class="on">
+                        <a href="#">
+                        <span  class="sidebar-icon"><i class="fas fa-chart-line"></i></span>
+                        <span class="title">Graphics</span></a>
+                    </li>
+                    <li>
+                        <a href="orders.html">
+                        <span class="sidebar-icon"><i class="fas fa-clipboard-list"></i></span>
+                        <span class="title">Orders</span></a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        <span class="sidebar-icon"><i class="fas fa-users"></i></span>
+                        <span class="title">Customers</span></a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        <span class="sidebar-icon"><i class="fas fa-info-circle"></i></span>
+                        <span class="title">Help</span></a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        <span class="sidebar-icon"><i class="fas fa-cog"></i></span>
+                        <span class="title">Settings</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="search here">
+                        <i class="fas fa-search"></i>
+                    </label>
+                </div>
+                <div class="user">
+                    <img src="" alt="">
+                </div>
+            </div>
+            <div class="graph-box">
+                <div class="box">
+                    <canvas id="monthly-sales"></canvas>
+                </div>
+            </div>
+            <div class="graph-box">
+                <div class="box">
+                    <canvas id="mychart"></canvas>
+                </div>
+            </div>
+        </div>
+        <script src="../JAVASCRIPT/dashessai.js"></script>
+        <script src="../JAVASCRIPT/chart.js"></script>
+        <script src="../JAVASCRIPT/my_chart.js"></script>
+    </body>
+</html>
